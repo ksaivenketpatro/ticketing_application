@@ -1,0 +1,35 @@
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ticket</title>
+</head>
+<body>
+    <h1>Ticket</h1>
+    <p>{{decrypted_message}}</p>
+    <p>{{verification_remarks}}</p>
+    <form action="/otp_ver">
+        <button type="submit">OTP Verification</button>
+    </form>
+</body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ticket</title>
+</head>
+<body style = "background-image: url('/static/bg_image.png');">
+<fieldset style="background-color: white; margin: auto; width: 450px; border: none; padding: 2% 8%; margin-top: 150px;">
+    <h1 style="text-align: center;">Ticket</h1>
+    <p>{{decrypted_message}}</p>
+    <p>{{verification_remarks}}</p>
+    <form action="/otp_ver">
+        <button type="submit" style="background-color: #007bff; border: none;
+            display: inline-block; border-radius: 5px; cursor: pointer; color: white; font-size: 16px;
+            padding: 10px 20px;">OTP Verification</button>
+    </form>
+</fieldset>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!--<!DOCTYPE html>
+<html>
+<head>
+    <title>Ticket</title>
+</head>
+<body>
+    <h1>Ticket</h1>
+    <p>Name: {{ name }}</p>
+    <p>Email: {{ email }}</p>
+    <p>Ticket ID: {{ ticket_id }}</p>
+    <p>Encrypted Message: {{ encrypted_message }}</p>
+    <img src="{{ qr_path }}" alt="QR Code">
+</body>
+</html>-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ticket Generator</title>
+</head>
+<body style = "background-image: url('/static/bg_image.png');">
+<h1 style="text-align:center; color: white; padding-top: 50px;">Your Ticket</h1>
+<form action="/ticket" method="post">
+    <fieldset style="background-color: white; margin: auto; width: 450px; border: none; padding: 2% 4%;
+    border-color: red; border-style: solid; border-width: thick;">
+        <img src= "/static/project_logo.jpeg" style="float: right; height: 80px; width: 100px;">
+        <div>
+            <p style="display: block; margin-bottom: 5px; font-weight: bold; font-size: 20px">Name: {{ name }}</p>
+            <p style="display: block; margin-bottom: 5px; font-weight: bold; font-size: 20px">Email: {{ email }}</p>
+            <p style="display: block; margin-bottom: 5px; font-weight: bold; font-size: 20px">Ticket ID: {{ ticket_id }}</p>
+            <p style="display: block; margin-bottom: 5px; font-weight: bold; font-size: 20px">Encrypted Message: {{ encrypted_message }}</p>
+            <img src="{{ qr_path }}" alt="QR Code" align="center">
+        </div>
+    </fieldset>
+</form>
+</body>
+</html>

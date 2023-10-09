@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multi Factor Verification</title>
+</head>
+<body>
+    <h1>OTP Authentication</h1>
+    {% if error %}
+    <p style="color: red;">{{ error }}</p>
+    {% endif %}
+
+    {% if flag %}
+    <form action="/otp_ver" method="post">
+        <label for="OTP">OTP:</label>
+        <input type="text" name="OTP" id="OTP"><br><br>
+        <button type="submit">Submit</button>
+    </form>
+    {% endif %}
+
+    {{verification_remarks}}
+</body>
+</html>
